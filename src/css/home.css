@@ -1,6 +1,6 @@
 .home-container {
     background-color: var(--dark-blue);
-    padding: 35px 15%;
+    padding: 0px 15%;
     position: relative;
     margin-top: 100px;
     height: calc(100vh - 100px);
@@ -44,7 +44,7 @@
 }
 
 .home-name {
-    font-size: 64px;
+    font-size: 100px;
     color: var(--electric-blue);
     font-weight: bold;
     padding: 10px 0px;

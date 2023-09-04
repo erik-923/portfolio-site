@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto&display=swap');
+
+
 :root {
-    font-family: 'PT Serif', serif;
+  font-family: 'Roboto', sans-serif;
 
   --electric-blue: #7edbfe;
   --dark-blue: #0b1727;
-  --grey: #465f73;
+  --grey: #366285;
   --white: #ffffff;
+  --darker-grey: #1a242b;
   --shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
