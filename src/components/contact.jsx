@@ -26,7 +26,7 @@ function Contact() {
 
     return (
         <div className="contact-container">
-            <div className="contact-card">
+            <div id="contact-card">
                 <div className='contact-header'>
                     Contact Me
                 </div>

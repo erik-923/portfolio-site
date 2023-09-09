@@ -1,6 +1,6 @@
 import '../css/home.css';
-// import Typed from 'react-typed';
-import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
+import { TypeAnimation } from 'react-type-animation';
+import { AiOutlineGithub, AiFillLinkedin, AiOutlineCloudDownload } from "react-icons/ai";
 
 function Home() {
 
@@ -28,18 +28,21 @@ function Home() {
                     </div>
                     <div className="home-quote center-items">
                         I am&nbsp;
-                        {/* <Typed 
-                            strings={[
+                        <TypeAnimation
+                            sequence={[
                                 'a computer science student.',
+                                1000,
                                 'a statistics student.',
+                                1000,
                                 'interested in software engineering.',
-                                'passionate about data science.'
+                                1000,
+                                'passionate about data science.',
+                                1000
                             ]}
-                            typeSpeed={75}
-                            backSpeed={50}
-                            backDelay={1000}
-                            loop
-                            /> */}
+                            speed={15}
+                            deletionSpeed={50}
+                            repeat={Infinity}
+                            />
                     </div>
                     <div className="links-container flex-horizontal center-items">
                         <a href="https://github.com/erik-923" target="_blank" rel="noopener noreferrer">
@@ -54,7 +57,7 @@ function Home() {
                         </a>                    
                     </div>
                     <div className='resume-button' onClick={onResumeClick}>
-                        Download my Resume!
+                        <AiOutlineCloudDownload fontSize={36}/> &nbsp;My Resume
                     </div>
                 </div>
             </div>

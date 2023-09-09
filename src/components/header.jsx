@@ -34,7 +34,7 @@ function Header() {
                 <div className="header-link" onClick={() => scrollToSection('projects-container')}>
                     Projects
                 </div>
-                <div className="header-link">
+                <div className="header-link" onClick={() => scrollToSection('contact-card')}>
                     Contact
                 </div>
             </div>

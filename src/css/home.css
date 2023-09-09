@@ -97,6 +97,9 @@
     transition: transform 0.2s;
     box-shadow:  13px 13px 26px #050a12,
              -13px -13px 26px #11243c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .resume-button:hover {
