@@ -1,5 +1,5 @@
 import '../css/home.css';
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 
 function Home() {
@@ -28,7 +28,7 @@ function Home() {
                     </div>
                     <div className="home-quote center-items">
                         I am&nbsp;
-                        <Typed 
+                        {/* <Typed 
                             strings={[
                                 'a computer science student.',
                                 'a statistics student.',
@@ -39,7 +39,7 @@ function Home() {
                             backSpeed={50}
                             backDelay={1000}
                             loop
-                            />
+                            /> */}
                     </div>
                     <div className="links-container flex-horizontal center-items">
                         <a href="https://github.com/erik-923" target="_blank" rel="noopener noreferrer">
