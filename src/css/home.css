@@ -1,4 +1,4 @@
-.home-container {
+#home-container {
     background-color: var(--dark-blue);
     padding: 0px 15%;
     position: relative;
@@ -65,6 +65,11 @@
 }
 
 .links-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 0;
     border: 2px solid var(--electric-blue);
     padding: 0px 5px;
     margin-top: 20px;
@@ -79,4 +84,21 @@
 
 .home-link:hover {
     color: var(--grey);
+}
+
+.resume-button {
+    color: var(--electric-blue);
+    margin-top: 40px;
+    padding: 10px 30px;
+    border: 2px solid var(--electric-blue);
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.2s;
+    box-shadow:  13px 13px 26px #050a12,
+             -13px -13px 26px #11243c;
+}
+
+.resume-button:hover {
+    transform: scale(1.15);
 }

@@ -1,4 +1,4 @@
-.about-container {
+#about-container {
     padding: 110px 35px 0px;
     background-color: var(--dark-blue);
     min-height: calc(100vh - 100px);
@@ -46,8 +46,9 @@
 }
 
 .about-text-header {
-    font-size: 30px;
+    font-size: 48px;
     margin: 20px 0px;
+    align-self: center;
 }
 
 .about-text-body {
@@ -56,29 +57,32 @@
 }
 
 .about-skills-header {
-    font-size: 30px;
+    font-size: 48px;
     margin: 20px 0px;
+    align-self: center;
 }
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-template-columns: repeat(auto-fit, 100px);
     gap: 10px;
+    margin: 0px 30px;
 }
 
 .skill-item {
-    color: var(--grey);
-    background-color: var(--darker-grey);
+    color: var(--electric-blue);
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 8px 10px;
     font-size: 18px;
     cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .skill-item:hover {
-    filter: brightness(85%);
+    transform: scale(1.2);
 }

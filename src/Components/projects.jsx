@@ -28,7 +28,7 @@ function Projects() {
     ];
 
     return (
-        <div className='projects-container'>
+        <div id='projects-container'>
             <div className='projects-header'>
                 Projects
             </div>

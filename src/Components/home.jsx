@@ -3,8 +3,24 @@ import Typed from 'react-typed';
 import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 
 function Home() {
+
+    const onResumeClick = () => {
+        // using Java Script method to get PDF file
+        fetch('Erik Blix - Resume.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'Erik Blix - Resume.pdf';
+                alink.click();
+            })
+        })
+    }
+
     return (
-        <div className="home-container flex-horizontal">
+        <div id="home-container" className="flex-horizontal">
             <div className="flex-vertical fill-space center-items">
                 <div className="home-text flex-vertical center-items">
                     <div className="home-name center-items">
@@ -36,6 +52,9 @@ function Home() {
                                 <AiFillLinkedin />
                             </div>
                         </a>                    
+                    </div>
+                    <div className='resume-button' onClick={onResumeClick}>
+                        Download my Resume!
                     </div>
                 </div>
             </div>

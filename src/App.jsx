@@ -3,17 +3,17 @@ import Header from'./components/header.jsx';
 import Home from './components/home.jsx';
 import About from './components/about.jsx';
 import Projects from './components/projects.jsx';
+import Contact from './components/contact.jsx';
 
 function App() {
 
   return (
     <div>
       <Header />
-      <div className='scroll-view'>
-        <Home />
-        <About />
-        <Projects />
-      </div>
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   )
 }
