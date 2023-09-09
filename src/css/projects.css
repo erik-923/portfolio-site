@@ -1,0 +1,132 @@
+.projects-container {
+    padding: 110px 35px 0px;
+    background-color: var(--dark-blue);
+    min-height: calc(100vh - 100px);
+    color: var(--electric-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.projects-header {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 4px 4px 8px var(--grey);
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+    gap: 100px;
+}
+
+.project-item {
+    display: flex;
+    width: 100%;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px 20px;
+    width: 50%;
+}
+
+
+.project-mockup {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0px 1%;
+}
+
+.project-image {
+    max-width: 100%; 
+    max-height: 450px; 
+    width: auto;
+    height: auto;
+}
+
+.project-title {
+    color: var(--electric-blue);
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.project-text {
+    font-size: 18px;
+}
+
+.title-underline {
+    padding: 0px 5px 5px 0px;
+    border-bottom: 3px solid var(--highlight-color);
+}
+
+.title-fill{
+    flex: 1;
+    text-align: left;
+}
+
+.tech-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tech-list {
+    display: flex;
+    gap: 10px;
+}
+
+.tech-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 15px;
+    background-color: var(--darker-grey);
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.tech-item:hover {
+    filter: brightness(85%);
+}
+
+.project-link {
+    color: var(--electric-blue);
+    margin: 0px 10%;
+    font-size: 48px;
+    padding: 5px 25px 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #0c192a, #0a1523);
+    box-shadow:  10px 10px 20px #070f19,
+             -10px -10px 20px #0f1f35;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.project-link:hover {
+    background: #0b1727; /* Change to the desired background color on hover */
+    box-shadow: 2px 2px 4px #070f19, -2px -2px 4px #0f1f35;
+}
+
+a {
+    text-decoration: none;
+}
