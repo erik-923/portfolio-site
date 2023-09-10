@@ -43,6 +43,7 @@
     flex: 1;
     padding: 0px 10px;
     margin-left: 10px;
+    width: 100%;
 }
 
 .about-text-header {
@@ -85,4 +86,19 @@
 
 .skill-item:hover {
     transform: scale(1.2);
+}
+
+@media only screen and (max-width: 800px) {
+    .about-header {
+        display: none;
+    }
+
+    .about-text-container {
+        flex-direction: column;
+    }
+
+    #about-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }

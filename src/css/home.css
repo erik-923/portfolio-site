@@ -105,3 +105,13 @@
 .resume-button:hover {
     transform: scale(1.15);
 }
+
+@media only screen and (max-width: 800px) {
+    .home-quote {
+        display: none;
+    }
+
+    .home-name {
+        text-align: center;
+    }
+}

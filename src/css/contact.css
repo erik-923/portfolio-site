@@ -68,3 +68,14 @@
 input::placeholder, textarea::placeholder {
     color: var(--electric-blue);
 }
+
+
+@media only screen and (max-width: 800px) {
+    #contact-card {
+        width: 350px;
+    }
+
+    .contact-container {
+        height: 70vh;
+    }
+}

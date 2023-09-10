@@ -42,9 +42,9 @@ function Projects() {
                             <div className='project-description'>
                                 <div className='project-title'>
                                     <div className='title-fill'>
-                                        <span className='title-underline'>
+                                        <div className='title-underline'>
                                             {project.name}
-                                        </span>
+                                        </div>
                                     </div>                        
                                     <a href={project.link} className='fill-space'>
                                         <div className='project-link'>

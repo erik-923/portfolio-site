@@ -81,3 +81,27 @@
     border: 2px solid var(--grey);
     background-color: var(--grey);
 }
+
+@media only screen and (max-width: 800px) {
+    .profile-section div {
+        display: none;
+    }
+
+    .header-container {
+        padding: 0px 0px;
+        width: 100%;
+    }
+
+    .header-link {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .header-links {
+        justify-content: space-around;
+    }
+
+    .profile-section {
+        flex: 0;
+    }
+}
