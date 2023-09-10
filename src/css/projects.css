@@ -75,6 +75,7 @@
 .title-underline {
     padding: 0px 5px 5px 0px;
     border-bottom: 3px solid var(--highlight-color);
+    max-width: max-content;
 }
 
 .title-fill{
